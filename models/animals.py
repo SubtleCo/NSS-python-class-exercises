@@ -110,7 +110,3 @@ class Turtle():
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-
-danny = Llama("Danny", "Alpaca", "Shift B", "Llama food")
-
-print(danny.feed())
