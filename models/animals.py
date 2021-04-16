@@ -1,14 +1,15 @@
 from datetime import date
 
-class Llama():
-    def __init__(self, name, species, shift, food, chip_number):
+class Animal:
+    def __init__(self, name, species, food, chip_number):
         self.name = name
         self.species = species
         self.date_added = date.today()
-        self.walking = True,
-        self.shift = shift,
-        self.food = food,
+        self.food = food
         self.__chip_number = chip_number
+
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
     @property # the getter
     def chip_number(self):
@@ -18,104 +19,92 @@ class Llama():
     def chip_number(self, fake_value):
         pass
 
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-
-
-class Goat():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Llama(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.walking = True
 
-class Tiger():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Goat(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.walking = True
 
-class Lemur():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Tiger(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.walking = True
 
-class Human():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Lemur(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.walking = True
 
-class Cobra():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Human(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
+        self.walking = True
+
+class Cobra(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.slithering = True
         
-class Cottonmouth():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Cottonmouth(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
+        self.slithering = True
+
+class Rattlesnake(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.slithering = True
         
-class Rattlesnake():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Garter_Snake(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.slithering = True
         
-class Garter_Snake():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Slimy(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.slithering = True
         
-class Slimy():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-        
-class Clownfish():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Clownfish(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.swimming = True
         
-class Marlin():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Marlin(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.swimming = True
         
-class Dolphin():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Dolphin(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.swimming = True
         
-class Whale():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Whale(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.swimming = True
         
-class Turtle():
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+class Turtle(Animal):
+    def __init__(self, name, species, shift, food, chip_number):
+        super().__init__(name, species, food, chip_number)
+        self.shift = shift,
         self.swimming = True

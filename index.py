@@ -10,6 +10,7 @@ zoo.admit(danny)
 zoo.roster()
 
 print(danny.chip_number)
-danny.chip_number = 54321
-print(danny.chip_number)
-print(zoo.last_critter_added)
+# danny.chip_number = 54321
+# print(danny.chip_number)
+print(zoo.last_critter_added.name)
+danny.feed()
