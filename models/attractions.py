@@ -17,4 +17,4 @@ class PettingZoo():
 
     @property
     def last_critter_added(self):
-        return f'{self.animals[-1]}'
+        return self.animals[-1]
