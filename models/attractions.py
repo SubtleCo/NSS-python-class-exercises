@@ -14,3 +14,7 @@ class PettingZoo():
         print('Animals here are')
         for animal in self.animals:
             print(animal.name)
+
+    @property
+    def last_critter_added(self):
+        return f'{self.animals[-1]}'

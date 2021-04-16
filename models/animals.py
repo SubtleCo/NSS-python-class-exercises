@@ -1,13 +1,22 @@
 from datetime import date
 
 class Llama():
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_number):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True,
         self.shift = shift,
-        self.food = food
+        self.food = food,
+        self.__chip_number = chip_number
+
+    @property # the getter
+    def chip_number(self):
+        return self.__chip_number
+
+    @chip_number.setter # the (fake) setter
+    def chip_number(self, fake_value):
+        pass
 
     def feed(self):
         print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
