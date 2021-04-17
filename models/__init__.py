@@ -1,4 +1,4 @@
-from .attractions import PettingZoo
+from .attractions import Petting_Zoo
 from .animals import (Clownfish,
                       Cobra,
                       Cottonmouth,
@@ -13,4 +13,6 @@ from .animals import (Clownfish,
                       Slimy,
                       Tiger,
                       Turtle,
-                      Whale)
+                      Whale,
+                      Animal)
+from .movements import Walking, Swimming, Slithering

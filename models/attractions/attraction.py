@@ -1,6 +1,6 @@
 from datetime import date
 
-class PettingZoo():
+class Attraction():
     def __init__(self, attraction_name, description):
         self.attraction_name = attraction_name
         self.description = description
