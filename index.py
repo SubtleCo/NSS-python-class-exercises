@@ -1,16 +1,13 @@
-from models.attractions import PettingZoo
 from models import (Llama,
-                    PettingZoo,
-                    Lemur)
+                    Petting_Zoo,
+                    Human)
 
 danny = Llama("Danny", "Alpaca", "Shift B", "Llama food", 12345)
-zoo = PettingZoo("Big Zoo", "A place for fuzzies")
+zoo = Petting_Zoo("Big Zoo", "A place for fuzzies")
+alex = Human("Alex", "Regular Human", "Shift A", "Waffles", 666)
 zoo.admit(danny)
-
+zoo.admit(alex)
 zoo.roster()
 
-print(danny.chip_number)
-# danny.chip_number = 54321
-# print(danny.chip_number)
-print(zoo.last_critter_added.name)
-danny.feed()
+
+
